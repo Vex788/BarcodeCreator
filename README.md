@@ -7,6 +7,7 @@ Wait for Maven to set up the project.
 ## To start
 Select artifact "Main" (to run the application normally (you need to enter the string you want to encode)), "MainTest" (to run test (no need to enter a string, data is stored in an array of strings)), after selecting the artifact, press Run or Shift + F10.
 ## Data entry requirements
+- To enter several lines for encoding, you need to separate them with a space.
 - Use uppercase letters for all data, as shown above.
 - Do not enter any spaces in the data.
 - Enter a value for each field. Null or zero values are not valid.
