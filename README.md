@@ -8,12 +8,7 @@ Wait for Maven to set up the project.
 Select artifact "Main" (to run the application normally (you need to enter the string you want to encode)), "MainTest" (to run test (no need to enter a string, data is stored in an array of strings)), after selecting the artifact, press Run or Shift + F10.
 ## Data entry requirements
 - To enter several lines for encoding, you need to separate them with a space.
-- Use uppercase letters for all data, as shown above.
 - Do not enter any spaces in the data.
-- Enter a value for each field. Null or zero values are not valid.
-- Do not list an ASIN with a quantity of 0. Exclude the ASIN from the data.
-- Do not pack more than 100 different ASINs in a single box.
-- Provide expiration dates in YYMMDD format.
 ## If the installation failed
 Create a New project/Maven (all default settings), and click Next and click Finish.
 ## After the tests or normal Run
