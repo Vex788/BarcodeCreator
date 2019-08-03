@@ -50,16 +50,16 @@ public class BarcodePDF417Creator {
             final int G = 10;
             final int NG = (images.size() + G - 1) / G;
 
-            ArrayList<ArrayList<Image>> result = new ArrayList(NG);
+            ArrayList<ArrayList<Image>> pages = new ArrayList(NG);
             IntStream.range(0, images.size())                       // get pages of 10 items
                     .forEach(i -> {
                         if (i % G == 0) {
-                            result.add(i / G, new ArrayList<>());
+                            pages.add(i / G, new ArrayList<>());
                         }
-                        result.get(i / G).add(images.get(i));
+                        pages.get(i / G).add(images.get(i));
                     });
             System.out.println("Insert barcodes");
-            for (ArrayList<Image> imageList : result) {
+            for (ArrayList<Image> imageList : pages) {
                 table = new PdfPTable(2);
 
                 for (Image image : imageList) {
